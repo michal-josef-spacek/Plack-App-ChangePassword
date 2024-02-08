@@ -2,6 +2,7 @@ ChangePassword.pm
 Changes
 CONCEPT
 examples/change_password_psgi.pl
+images/change_password_psgi_screenshot.png
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm
