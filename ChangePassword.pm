@@ -174,6 +174,14 @@ Author string to HTML head.
 
 Default value is undef.
 
+=item * C<change_password_cb>
+
+Callback for main changing of password.
+Arguments for callback are: C<$env>, C<$old_password> and C<$password>.
+Returns 0/1 for (un)successful changing of password.
+
+Default value is undef.
+
 =item * C<content_type>
 
 Content type for output.
@@ -252,14 +260,6 @@ Default value is undef.
 =item * C<redirect_error>
 
 Redirect URL after error in changing of password.
-
-Default value is undef.
-
-=item * C<change_password_cb>
-
-Callback for main changing of password.
-Arguments for callback are: C<$env>, C<$old_password> and C<$password>.
-Returns 0/1 for (un)successful changing of password.
 
 Default value is undef.
 
