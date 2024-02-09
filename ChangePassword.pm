@@ -12,7 +12,7 @@ use Plack::Session;
 use Tags::HTML::ChangePassword;
 use Tags::HTML::Container;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub _css {
 	my ($self, $env) = @_;
@@ -509,6 +509,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
