@@ -85,6 +85,7 @@ sub _process_actions {
 			$res->redirect($self->redirect_error);
 		}
 		$self->psgi_app($res->finalize);
+		return;
 	}
 
 	my $messages_ar = [];
