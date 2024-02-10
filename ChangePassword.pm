@@ -17,10 +17,7 @@ our $VERSION = 0.03;
 sub _css {
 	my ($self, $env) = @_;
 
-	$self->{'_tags_change_password'}->process_css({
-		'info' => 'blue',
-		'error' => 'red',
-	});
+	$self->{'_tags_change_password'}->process_css;
 	$self->{'_tags_container'}->process_css;
 
 	return;
@@ -57,6 +54,10 @@ sub _prepare_app {
 		'tags' => $self->tags,
 	);
 	$self->{'_tags_change_password'} = Tags::HTML::ChangePassword->new(%p);
+	$self->{'_tags_change_password'}->prepare({
+		'info' => 'blue',
+		'error' => 'red',
+	});
 	$self->{'_tags_container'} = Tags::HTML::Container->new(%p);
 
 	return;
@@ -406,6 +407,12 @@ Returns Plack::Component object.
  # }
  # .form-change-password .messages {
  # 	text-align: center;
+ # }
+ # .error {
+ # 	color: red;
+ # }
+ # .info {
+ # 	color: blue;
  # }
  # .container {
  # 	display: flex;

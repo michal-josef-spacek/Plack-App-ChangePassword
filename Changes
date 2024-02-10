@@ -1,4 +1,5 @@
 0.03
+ - Fix initialization of errors.
  - Sort constructor parameters in doc.
 
 0.02 2024-02-09T09:40:44+01:00
