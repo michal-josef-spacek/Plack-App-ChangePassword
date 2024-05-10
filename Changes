@@ -1,5 +1,6 @@
 0.04
  - Add lang() and text() accessor for translations.
+ - Add tests for errors.
  - Regen README file.
 
 0.03 2024-02-10T11:06:23+01:00
